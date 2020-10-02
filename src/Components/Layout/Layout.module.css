@@ -1,5 +1,12 @@
 .content {
-    width: 75%;
-    height: 100%;
+    position: absolute;
+    left:28%;
+    top:200px;
+    width: 72%;
     margin: auto;
+}
+
+.layout {
+    min-height:100vh ;
+    padding-bottom: 100px;
 }

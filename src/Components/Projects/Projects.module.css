@@ -1,0 +1,10 @@
+.projetImgs {
+    display: flex;
+}
+
+.imgs {
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: 30px;
+    border-radius: 10px;
+}

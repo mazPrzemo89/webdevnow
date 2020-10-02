@@ -1,18 +1,32 @@
 .menu {
+    position: absolute;
     display: flex;
     justify-content: space-between;
+    height: 150px;
+    width: 60%;
+    right: 15%; 
+    padding-left: 75px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.267)
 }
 
+
 .menu_item {
-    width: 100px;
-    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 140px;;
+}
+
+.menu_items {
+    display: flex;
 }
 
 .menu a {
     text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif
 }
 
-
-.logo {
-    width: 70%
+.menu a p:hover {
+   padding-bottom: 8px;
 }

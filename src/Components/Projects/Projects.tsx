@@ -1,12 +1,16 @@
 import React from 'react'
-import Layout from '../Layout/Layout'
-
+import styles from './Projects.module.css'
+import folimer from './folimer.png'
+import pmu from './pmu.jpeg'
 
 const Projects = () => {
     return (
-        <Layout>
-            <h1>Projects</h1>
-        </Layout>
+
+        <div className={styles.projetImgs}>
+            <img src={folimer} className={styles.imgs} alt='dupa' />
+            <img src={pmu} className={styles.imgs} alt='dupa' />
+        </div>
+
     )
 }
 

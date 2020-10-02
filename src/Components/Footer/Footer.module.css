@@ -1,7 +1,23 @@
 .footer {
+    position: absolute;
     height: 100px;
     width: 100%;
-    background-color: #0d1590;
+    right: 20%;
+    margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.267);
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    color:#294f7b
+}
+
+
+.phone {
     position: absolute;
-    bottom: 0px;
+    top: 2px
+}
+
+
+.email {
+    position: absolute;
+    top: 30px
 }

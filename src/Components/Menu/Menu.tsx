@@ -9,11 +9,12 @@ interface ChildComponentProps extends RouteComponentProps<any> {
 
 const isActive = (history: any, path: string) => {
     if (history.location.pathname === path) {
-        return { color: '#7D7461' }
+        return { color: '#4bb2e0' }
     } else {
-        return { color: '#E7BB41' }
+        return { color: '#294f7b' }
     }
 }
+
 
 const Menu: React.FC<ChildComponentProps> = ({ history }) => {
 
@@ -21,29 +22,31 @@ const Menu: React.FC<ChildComponentProps> = ({ history }) => {
 
     return (
         <div className={styles.menu}>
-            <div className={styles.logo}>
+
+            <div className={styles.menu_items}>
+                <div className={styles.menu_item}>
+                    <Link style={isActive(history, '/')} to="/">
+                        <p >Home</p>
+                    </Link>
+                </div>
+                <div className={styles.menu_item}>
+                    <Link style={isActive(history, '/projects')} to="/projects">
+                        <p >Projects</p>
+                    </Link>
+                </div>
+                <div className={styles.menu_item}>
+                    <Link style={isActive(history, '/pricing')} to="/pricing">
+                        <p >Pricing</p>
+                    </Link>
+                </div>
+                <div className={styles.menu_item}>
+                    <Link style={isActive(history, '/about')} to="/about">
+                        <p >About</p>
+                    </Link>
+                </div>
 
             </div>
-            <div className={styles.menu_item}>
-                <Link style={isActive(history, '/')} to="/">
-                    <p >Home</p>
-                </Link>
-            </div>
-            <div className={styles.menu_item}>
-                <Link style={isActive(history, '/projects')} to="/projects">
-                    <p >Projects</p>
-                </Link>
-            </div>
-            <div className={styles.menu_item}>
-                <Link style={isActive(history, '/pricing')} to="/pricing">
-                    <p >Pricing</p>
-                </Link>
-            </div>
-            <div className={styles.menu_item}>
-                <Link style={isActive(history, '/about')} to="/about">
-                    <p >About</p>
-                </Link>
-            </div>
+
         </div >
 
     )
