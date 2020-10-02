@@ -3,7 +3,7 @@ import React from 'react'
 
 
 
-const Home = () => {
+const EvsAndIntp = () => {
 
 
     const [value, setValue] = useState<string>('')
@@ -53,4 +53,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default EvsAndIntp
